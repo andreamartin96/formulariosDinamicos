@@ -1,0 +1,140 @@
+/*
+ * Style tweaks | Estilos del index
+ * --------------------------------------------------
+ */
+html,
+body {
+  overflow-x: hidden; /* Prevent scroll on narrow devices */
+}
+body {
+  padding-top: 85px;
+}
+footer {
+  padding: 30px 0;
+}
+
+/*
+ * Off Canvas
+ * --------------------------------------------------
+ */
+@media screen and (max-width: 767px) {
+  .row-offcanvas {
+    position: relative;
+    -webkit-transition: all .25s ease-out;
+         -o-transition: all .25s ease-out;
+            transition: all .25s ease-out;
+  }
+
+  .row-offcanvas-right {
+    right: 0;
+  }
+
+  .row-offcanvas-left {
+    left: 0;
+  }
+
+  .row-offcanvas-right
+  .sidebar-offcanvas {
+    right: -100%; /* 12 columns */
+  }
+
+  .row-offcanvas-right.active
+  .sidebar-offcanvas {
+    right: -50%; /* 6 columns */
+  }
+
+  .row-offcanvas-left
+  .sidebar-offcanvas {
+    left: -100%; /* 12 columns */
+  }
+
+  .row-offcanvas-left.active
+  .sidebar-offcanvas {
+    left: -50%; /* 6 columns */
+  }
+
+  .row-offcanvas-right.active {
+    right: 50%; /* 6 columns */
+  }
+
+  .row-offcanvas-left.active {
+    left: 50%; /* 6 columns */
+  }
+
+  .sidebar-offcanvas {
+    position: absolute;
+    top: 0;
+    width: 50%; /* 6 columns */
+  }
+}
+
+#sidebar{
+  margin-top: 30px;
+}
+
+#titulo{
+  margin-top: 20px;
+  font-family: 'Indie Flower', cursive;
+}
+
+.titulo2{
+  font-family: 'Indie Flower', cursive;
+}
+
+.titulo3{
+  font-family: 'Indie Flower', cursive;
+  text-align: center;
+  color: blue;
+}
+
+#idMenu{
+  text-align: center;
+  background-color: #343a40;
+  border-color: #212529;
+}
+
+#linksMenu{
+  color: blue;
+  
+}
+
+.subr{
+  text-decoration: underline;
+}
+
+.gris{
+  color: gray;
+}
+
+.sombra:hover{
+  -webkit-box-shadow: 0 0 5px black;
+  -moz-box-shadow: 0 0 5px black;
+  -ms-box-shadow: 0 0 5px black;
+  box-shadow: 0 0 5px black;
+}
+
+.margenDer{
+  margin-right: 8px;
+}
+
+.margenIzq{
+  margin-left: 8px;
+}
+
+#bg{
+    position: fixed;
+    top: -50%;
+    left: -50%;
+    width: 200%;
+    height: 200%;
+    z-index: -1;
+
+}
+#bg img{
+    width: 100%;
+    height: 100%;
+}
+
+#margenLogin{
+  margin-left: 400px;
+}
